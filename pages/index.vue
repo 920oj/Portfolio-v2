@@ -1,5 +1,5 @@
 <template>
-  <div class="index">
+  <div class="index h-screen w-full">
     <top />
     <about />
     <works />
@@ -29,7 +29,8 @@ export default {
     const observer = new IntersectionObserver(elems => {
       elems.forEach(elem => {
         if (elem.isIntersecting) {
-          console.log(elem.target);
+          console.log(elem.target.id);
+          this.$store.commit('changeSectionState', elem.target.id);
         }
       });
     }, options);
@@ -41,4 +42,8 @@ export default {
 </script>
 
 <style>
+.index {
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+}
 </style>

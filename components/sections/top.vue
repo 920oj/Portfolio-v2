@@ -1,6 +1,7 @@
 <template>
   <section
-    class="h-screen w-full bg-cover bg-center"
+    id="top"
+    class="h-screen w-full bg-cover bg-center relative"
     style="background-image: url('/img/cover.jpg');"
   >
     <div
@@ -28,4 +29,7 @@ export default {
 </script>
 
 <style>
+#top {
+  scroll-snap-align: start;
+}
 </style>
