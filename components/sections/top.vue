@@ -7,6 +7,7 @@
     <div
       class="h-screen w-full flex flex-col justify-center items-center text-white"
       style="animation: bg-fade-in 5s ease forwards"
+      v-if="disp"
     >
       <tagline first="Webを作る、" second="世界を創る。" third="Junya Oiwa's Portfollio ver.2" />
       <nextbutton />
@@ -24,6 +25,11 @@ export default {
   components: {
     tagline,
     nextbutton,
+  },
+  computed: {
+    disp() {
+      return this.$store.getters.getDisplayStatus('top');
+    },
   },
 };
 </script>

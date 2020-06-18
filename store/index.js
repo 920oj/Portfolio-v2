@@ -12,3 +12,10 @@ export const mutations = {
   }
 
 }
+
+export const getters = {
+  getDisplayStatus: (state) => (payload) => {
+    const state_name = `on_${payload}`
+    return state[state_name];
+  },
+}
