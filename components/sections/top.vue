@@ -20,7 +20,7 @@
 
 <script>
 import tagline from '~/components/parts/top/tagline.vue';
-import nextbutton from '~/components/ui/nextButton.vue';
+import nextbutton from '~/components/commons/nextButton.vue';
 export default {
   components: {
     tagline,
