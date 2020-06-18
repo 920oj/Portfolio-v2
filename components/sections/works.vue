@@ -6,7 +6,7 @@
     >
       <div
         id="carousel"
-        class="w-full sm:w-9/12 h-full overflow-x-scroll flex whitespace-no-wrap"
+        class="w-full sm:w-9/12 h-full overflow-x-scroll flex whitespace-no-wrap cursor-move"
         v-dragscroll="true"
       >
         <card />
