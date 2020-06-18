@@ -1,10 +1,21 @@
 <template>
   <div id="about-panel" class="rounded-lg container mx-auto flex flex-col md:flex-row z-50">
     <div class="rounded-lg h-full w-full flex justify-center items-center flex-col">
-      <img src="/img/oj-icon.jpg" alt="Junya Oiwa" class="w-2/6 md:w-4/6 rounded-full" />
-      <p class="font-bold text-2xl mt-4">大岩 潤矢(Junya Oiwa)</p>
+      <img
+        src="/img/oj-icon.jpg"
+        alt="Junya Oiwa"
+        class="w-2/6 md:w-4/6 rounded-full"
+        style="animation: left-to-right 3s cubic-bezier(.23, 1, .32, 1) 0.4s both"
+      />
+      <p
+        class="font-bold text-2xl mt-4"
+        style="animation: left-to-right 3s cubic-bezier(.23, 1, .32, 1) 0.6s both"
+      >大岩 潤矢(Junya Oiwa)</p>
     </div>
-    <div class="rounded-lg h-full w-full flex justify-center md:items-center px-8">
+    <div
+      class="rounded-lg h-full w-full flex justify-center md:items-center px-8"
+      style="animation: right-to-left 3s cubic-bezier(.23, 1, .32, 1) 0.8s both"
+    >
       <div class="leading-relaxed text-sm md:text-base">
         <p>東京都市大学 メディア情報学部 社会メディア学科 3年</p>
         <p>Web開発者を目指しています。2019年8月よりVue.jsを用いたモダンWebフロントエンド分野の勉強を始め、現在は主にNuxt.jsを用いて開発。</p>

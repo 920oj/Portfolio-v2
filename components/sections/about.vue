@@ -1,10 +1,7 @@
 <template>
-  <section
-    id="about"
-    class="h-screen w-full bg-cover bg-center bg-gray-100 flex items-center justify-center relative"
-  >
-    <aboutme />
-    <bgtext>about</bgtext>
+  <section id="about" class="h-screen w-full bg-gray-100 flex items-center justify-center relative">
+    <aboutme v-if="disp" />
+    <bgtext v-if="disp">about</bgtext>
   </section>
 </template>
 
@@ -15,6 +12,12 @@ export default {
   components: {
     aboutme,
     bgtext,
+  },
+  computed: {
+    disp() {
+      console.log('発火しました');
+      return this.$store.getters.getDisplayStatus('about');
+    },
   },
 };
 </script>
