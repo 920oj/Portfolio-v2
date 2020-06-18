@@ -1,5 +1,11 @@
 <template>
-  <div class="next-button"></div>
+  <div
+    class="next-button absolute bottom-0 mb-8 flex flex-col items-center"
+    style="animation:fluffy 2s ease-out infinite alternate;"
+  >
+    <p>PLEASE SCROLL DOWN</p>
+    <p class="text-2xl">▼</p>
+  </div>
 </template>
 
 <script>

@@ -1,6 +1,8 @@
 <template>
   <div class="index">
     <top />
+    <about />
+    <works />
   </div>
 </template>
 
@@ -16,6 +18,24 @@ export default {
     about,
     works,
     contact,
+  },
+  mounted() {
+    const sections = document.querySelectorAll('section');
+    const options = {
+      root: document.querySelector('#index'),
+      rootMargin: '-10px',
+      threshold: 0,
+    };
+    const observer = new IntersectionObserver(elems => {
+      elems.forEach(elem => {
+        if (elem.isIntersecting) {
+          console.log(elem.target);
+        }
+      });
+    }, options);
+    sections.forEach(elem => {
+      observer.observe(elem);
+    });
   },
 };
 </script>
