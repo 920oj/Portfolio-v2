@@ -3,6 +3,7 @@
     <top />
     <about />
     <works />
+    <contact />
   </div>
 </template>
 
